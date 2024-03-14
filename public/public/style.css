@@ -1,0 +1,204 @@
+* {
+    scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Questrial", sans-serif;
+}
+#my-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+nav {
+  position: absolute;
+  top: 5px;
+}
+p{
+  text-align: center;
+}
+.navbar-brand h2 {
+  font-family: "Questrial", sans-serif;
+  font-size: 29px;
+  letter-spacing: 1px;
+  font-weight: bolder;
+  position: relative;
+  left: 30px;
+  color: #ffffff;
+}
+.SearchInput {
+  position: absolute;
+  right: 15vw;
+  top: 10px;
+  height: 35px;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  outline: none;
+  background: none;
+  border: 1px solid white;
+  color: #fff;
+  display: none;
+}
+
+#anima,#animaText{
+  animation: 3s ease-in-out;
+}
+
+@keyframes animation {
+  from {
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.search-icon {
+  position: absolute;
+  right: 12vw;
+  top: 15px;
+  cursor: pointer;
+}
+.contact-icon {
+  position: absolute;
+  right: 8vw;
+  top: 15px;
+  cursor: pointer;
+}
+.cart-icon {
+  position: absolute;
+  right: 4vw;
+  top: 15px;
+  cursor: pointer;
+}
+
+.detailes-list {
+  margin-left: 40px;
+}
+
+.adverticement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 89vh;
+}
+.adverticement img {
+  width: 82vw;
+  height: 74vh;
+  object-fit: cover;
+  margin-top: 1px;
+}
+
+.payment-note {
+  display: grid;
+  justify-items: center;
+  padding-top: 54px;
+}
+
+.payment-head {
+  color: #fff;
+  font-size: 50px;
+}
+.paragraph-payment {
+  width: 50%;
+  text-align: center;
+  color: #ffffff7e;
+  font-size: 17px;
+  padding-top: 23px;
+  padding-bottom: 64px;
+}
+
+.card-img:hover {
+  outline-offset: 260px;
+}
+
+.card-body a:hover {
+    background-color: #ffffff10;
+}
+
+.payment-head-one {
+  color: #fff;
+  font-size: 63px;
+}
+.paragraph-payment-one {
+  width: 50%;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  padding-top: 23px;
+}
+.payment-email {
+  color: #ffffff7e;
+  font-size: 20px;
+}
+
+.card-img {
+    object-fit: cover;
+    height: 32vh;
+    background-attachment: inherit;
+    background-repeat: inherit;
+    background-position: inherit;
+    background-size: inherit;
+}
+@media screen and (max-width: 991px) {
+  .card-img {
+    object-fit: contain;
+    height: 28vh;
+  }
+}
+@media screen and (max-width: 767px) {
+  .paragraph-payment {
+    font-size: 15px;
+    width: 90vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  .payment-head {
+    font-size: 30px;
+  }
+
+  .RECOMMENDED-PRODUCTS{
+    color: #fff;
+    text-align: center;
+    /* padding-bottom: 30px; */
+    padding: 10px 20px;
+    margin-top: 25px;
+  }
+
+  .paragraph-payment {
+    font-size: 13px;
+    width: 90vw;
+  }
+  .payment-head-one {
+    font-size: 30px;
+  }
+  .paragraph-payment-one {
+    font-size: 13px;
+    width: 90vw;
+  }
+  .payment-email {
+    font-size: 10px;
+  }
+  .adverticement {
+    height: 53vh;
+  }
+  .adverticement img{
+    height: 53vh;
+  }
+}
+
+
+#preloader {
+  background: #000 url("https://dl.dropboxusercontent.com/scl/fi/uvoeafgglxu6ppwr545vg/gif-animations-replace-loading-screen-15.gif?rlkey=g32qjk2jj270bp9j35fx3ygoy&dl=0") no-repeat center center;
+  background-size: 10%;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 100;
+}

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>woxzplugins</title>
+  <link rel="icon"
+    href="https://yt3.googleusercontent.com/rQZF_Pmhkkk1-YikiF59QiqXVHR5dOIzpq8TSCtIQ69bQMNN1jRg5J2hvWDiV8srHsImF_qKDg=s176-c-k-c0x00ffffff-no-rj">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="aos-by-red.css">
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+  <div id="preloader"></div>
+  <video autoplay muted loop id="my-video">
+    <source src="plugin.mp4" type="video/mp4">
+  </video>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="../index.html">
+        <h2>woxzplugins</h2>
+      </a>
+
+      <button class="navbar-toggler disable" type="button" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav detailes-list">
+          <!-- <a class="nav-link active text-white text-capitalize" aria-current="page" href="#">Home</a>
+          <a class="nav-link text-white text-capitalize" href="#">Courses</a>
+          <a class="nav-link text-white text-capitalize" href="#">About</a>
+          <a class="nav-link text-white text-capitalize" href="#">Contact Us</a> -->
+          <svg id="search-icon" class=" search-icon text-white" width="24" height="24" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M16.8333 9.83333C16.8333 5.96667 13.7 2.86667 9.86667 2.86667C6 2.86667 2.9 6 2.9 9.83333C2.9 13.7 6.03333 16.8 9.86667 16.8C13.7 16.8333 16.8333 13.7 16.8333 9.83333ZM22 21.4L21.4 22L15.0667 15.6667C13.6667 16.9 11.8667 17.6667 9.83333 17.6667C5.5 17.6667 2 14.1667 2 9.83333C2 5.5 5.5 2 9.83333 2C14.1667 2 17.6667 5.5 17.6667 9.83333C17.6667 11.8333 16.9 13.6667 15.6667 15.0667L22 21.4Z"
+              fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+          </svg>
+
+          <svg class="text-white contact-icon" width="24" height="24" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M23.5 12.0037C23.5012 10.0898 23.0244 8.20585 22.1129 6.52281C21.2014 4.83976 19.884 3.41084 18.2802 2.36565C16.6764 1.32047 14.8369 0.692104 12.9287 0.537549C11.0204 0.382995 9.10378 0.707143 7.35258 1.48059C5.60138 2.25404 4.07105 3.45232 2.9004 4.96672C1.72975 6.48113 0.955821 8.26374 0.64882 10.1529C0.34182 12.042 0.511461 13.9779 1.14235 15.7848C1.77325 17.5918 2.84543 19.2128 4.26165 20.5006C4.28966 20.5338 4.32226 20.5629 4.35848 20.5869C6.46141 22.4631 9.18149 23.5 12.0001 23.5C14.8188 23.5 17.5388 22.463 19.6417 20.5867C19.6778 20.5628 19.7102 20.5338 19.7381 20.5007C20.9235 19.4252 21.8705 18.1135 22.5184 16.6501C23.1663 15.1867 23.5007 13.604 23.5 12.0037ZM1.42 12.0037C1.41878 10.2648 1.84643 8.55248 2.66509 7.01827C3.48375 5.48405 4.66817 4.17528 6.11348 3.20782C7.55879 2.24035 9.22042 1.64404 10.9512 1.47168C12.6821 1.29931 14.4287 1.55621 16.0365 2.21963C17.6444 2.88305 19.0638 3.93252 20.1691 5.27513C21.2744 6.61775 22.0316 8.21209 22.3735 9.91701C22.7155 11.6219 22.6317 13.3848 22.1295 15.0496C21.6274 16.7145 20.7224 18.2298 19.4947 19.4616C18.3528 17.55 16.5208 16.1493 14.3764 15.5482C15.373 15.0182 16.1638 14.1702 16.6228 13.1392C17.0819 12.1081 17.1828 10.9532 16.9096 9.85816C16.6364 8.76314 16.0047 7.79091 15.1151 7.09614C14.2254 6.40136 13.1289 6.02395 12 6.02395C10.8711 6.02395 9.77458 6.40136 8.88494 7.09614C7.9953 7.79091 7.36363 8.76314 7.09042 9.85816C6.8172 10.9532 6.91814 12.1081 7.37717 13.1392C7.8362 14.1702 8.62696 15.0182 9.62364 15.5482C7.4792 16.1493 5.64721 17.55 4.50533 19.4616C3.52633 18.4819 2.74996 17.3191 2.22057 16.0394C1.69119 14.7598 1.41915 13.3884 1.42 12.0037ZM12 15.2226C11.1812 15.2226 10.3808 14.9799 9.69994 14.5252C9.01912 14.0704 8.48848 13.424 8.17514 12.6678C7.86179 11.9115 7.77981 11.0794 7.93955 10.2765C8.09929 9.4737 8.49359 8.73626 9.07258 8.15745C9.65157 7.57864 10.3892 7.18447 11.1923 7.02478C11.9954 6.86509 12.8278 6.94705 13.5843 7.26029C14.3408 7.57354 14.9874 8.10401 15.4423 8.78461C15.8972 9.46522 16.14 10.2654 16.14 11.084C16.1388 12.1812 15.7022 13.2332 14.9261 14.0091C14.1499 14.785 13.0976 15.2214 12 15.2226ZM5.19947 20.0991C5.88217 18.8976 6.87116 17.8985 8.06574 17.2035C9.26032 16.5084 10.6178 16.1422 12 16.1422C13.3822 16.1422 14.7397 16.5084 15.9343 17.2035C17.1288 17.8985 18.1178 18.8976 18.8005 20.0991C16.897 21.7015 14.4885 22.5803 12 22.5803C9.51148 22.5803 7.10295 21.7015 5.19947 20.0991Z"
+              fill="currentColor"></path>
+          </svg>
+          <svg class="text-white cart-icon" width="24" height="24" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M18 23.5H6C3.8 23.5 2 21.7 2 19.5V4.2H22V19.5C22 21.7 20.2 23.5 18 23.5ZM3 5.2V19.5C3 21.2 4.3 22.5 6 22.5H18C19.7 22.5 21 21.2 21 19.5V5.2H3Z"
+              fill="currentColor"></path>
+            <path
+              d="M12 1C9.7 1 8 2.5 8 4.5C8 4.8 7.8 5 7.5 5C7.2 5 7 4.8 7 4.5C7 1.8 9.3 0 12 0C14.7 0 17 1.8 17 4.5C17 4.8 16.8 5 16.5 5C16.2 5 16 4.8 16 4.5C16 2.5 14.3 1 12 1Z"
+              fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+            <path
+              d="M2 4.18018H22V19.5002C22 21.7093 20.2091 23.5002 18 23.5002H6C3.79086 23.5002 2 21.7093 2 19.5002V4.18018Z"
+              fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" class="ins-cart-has-good"></path>
+          </svg>
+          <div class="search">
+            <input class="SearchInput" type="text" name="" id="find" placeholder="search here...." onkeyup="search()">
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- hero -->
+
+  <div>
+
+    <section id="hideimg" style="position: relative;">
+      <div class="container-fluid">
+        <div class="col-md-12 col-12 adverticement">
+          <img src="https://dhgf5mcbrms62.cloudfront.net/96073816/call-to-action-bAp8Dw/yiNtOvc-2000x2000.webp"
+            alt="editing pack">
+        </div>
+      </div>
+    </section>
+    <!-- hero -->
+
+    <!-- note section  -->
+
+    <!-- note section  -->
+
+    <!-- product section -->
+    <section>
+      <div class="container-fluid" id="animaText" data-aos="fade-up">
+        <h1 class="RECOMMENDED-PRODUCTS text-uppercase" style="color: #fff; text-align: center; padding-bottom: 30px;">After Effect Plugins</h1>
+      </div>
+    </section>
+  </div>
+  <!-- product section -->
+
+  <!-- cards -->
+  <div class="container">
+    <div class="row" id="anima" data-aos="fade-up">
+      <div class="col-6 col-md-3 product"
+        style="margin-top: 10px; display: flex; justify-content: center; align-items: center;">
+        <div class="card border-none" style="width: 16rem; border: none; background: none;">
+          <img class="card-img"
+            src="https://img.playbook.com/XvjH1Bv9ZPHW9sSMBbuZfPteSAFMKKumDshqxnD5rYs/w:250/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy8wMzBh/YzZlZC05M2JjLTQ4/YTUtYThjOS0zMWYz/Njc3MGI0YmQ.webp"
+            class="card-img-top" alt="...">
+          <div class="card-body"
+            style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <p style="color: #fff;">Deep Glow</p>
+            <p style="color: #fff; font-weight: 600;">₹0.00</p>
+            <a href="https://www.mediafire.com/file/b71589sdebhugt2/Deep_Glow_Win.zip/file" class="btn text-white" style="border: 1px solid #fff; width: 110px;">Download</a>
+          </div>
+        </div>
+      </div>
+      <!-- ---------------------------------------- -->
+      <div class="col-6 col-md-3 product"
+        style="margin-top: 10px; display: flex; justify-content: center; align-items: center;">
+        <div class="card border-none" style="width: 16rem; border: none; background: none;">
+          <img class="card-img"
+            src="https://img.playbook.com/L5Kie__5C-5cTpB3lZDQUKehtxso_kxWUr2iTOT75gI/w:250/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy9kNjcw/ZjU0My04MmRkLTRk/ZTYtOTZkMi0yYmY3/ODVlYTc1M2M.webp"
+            class="card-img-top" alt="...">
+          <div class="card-body"
+            style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <p style="color: #fff;">Twixtor pro</p>
+            <p style="color: #fff; font-weight: 600;">₹0.00</p>
+            <a href="https://www.mediafire.com/file/1inox9nj0z13uus/Twixtor_Pro.rar/file" class="btn text-white" style="border: 1px solid #fff; width: 110px;">Download</a>
+          </div>
+        </div>
+      </div>
+      <!-- ---------------------------------------- -->
+      <div class="col-6 col-md-3 product"
+        style="margin-top: 10px; display: flex; justify-content: center; align-items: center;">
+        <div class="card border-none" style="width: 16rem; border: none; background: none;">
+          <img class="card-img"
+            src="https://img.playbook.com/AHUQSPFK8WRgnQChmP0-gsIP8i1rSDgt0GFAQWRKSZs/w:500/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy80ODVm/NGM5OC0wNzg3LTQw/NDMtOTZjZi0yZGRh/YmNiYTg5YWI.webp"
+            class="card-img-top" alt="...">
+          <div class="card-body"
+            style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <p style="color: #fff;">RSMB</p>
+            <p style="color: #fff; font-weight: 600;">₹0.00</p>
+            <a href="https://www.mediafire.com/file/an5i20ir0i97eho/RSMB.rar/file" class="btn text-white"
+              style="border: 1px solid #fff; width: 110px; ">Download</a>
+          </div>
+        </div>
+      </div>
+      <!-- ---------------------------------------- -->
+      <div class="col-6 col-md-3 product"
+        style="margin-top: 10px; display: flex; justify-content: center; align-items: center;">
+        <div class="card border-none" style="width: 16rem; border: none; background: none;">
+          <img class="card-img"
+            src="https://img.playbook.com/4FgcskeCM6F-PaoRMU0fXfuHs8gH3BcGZWI8GLx-9aY/w:500/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy9mMmNi/OTNhZi02M2U4LTRm/ZDctODhjNS0xZTE5/NzA0YzQ2OTk.webp"
+            class="card-img-top" alt="...">
+          <div class="card-body"
+            style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <p style="color: #fff;">Flow</p>
+            <p style="color: #fff; font-weight: 600;">₹0.00</p>
+            <a href="https://www.mediafire.com/file/y34fi9vf7efu4h4/Flow_v1.4.1.rar/file" class="btn text-white"
+              style="border: 1px solid #fff; width: 110px; ">Download</a>
+          </div>
+        </div>
+      </div>
+      <!-- ----------------second colum------------------------ -->
+      <div class="col-6 col-md-3 product"
+        style="margin-top: 10px; display: flex; justify-content: center; align-items: center;">
+        <div class="card border-none" style="width: 16rem; border: none; background: none;">
+          <img class="card-img"
+            src="https://img.playbook.com/Z_ZJAj7xhlXm1nz4Y9N3AtA3du1ZMxi7xpUj1_GAiyE/w:500/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvMTFmYzQ4/MjctZmNhYS00NTJi/LTkxNTUtMjcyMzFj/ZDQyYmVl.webp"
+            class="card-img-top" alt="...">
+          <div class="card-body"
+            style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <p style="color: #fff;">FX Console</p>
+            <p style="color: #fff; font-weight: 600;">₹0.00</p>
+            <a href="https://www.mediafire.com/file/u4pg0x4ogyb58ww/FXConsole_1.0.5_Installer_Win_2022.1.zip/file" class="btn text-white"
+              style="border: 1px solid #fff; width: 110px;">Download</a>
+          </div>
+        </div>
+      </div>
+      <!-- ---------------------------------------- -->
+      <div class="col-6 col-md-3 product"
+        style="margin-top: 10px; display: flex; justify-content: center; align-items: center;">
+        <div class="card border-none" style="width: 16rem; border: none; background: none;">
+          <img class="card-img"
+            src="https://img.playbook.com/jvFKhsqqJ8ElHDfJXvdFItTMkwkmIaru8ZT2CVXkRr4/w:250/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy8zMzRl/NjgwMy03MTEzLTRl/YjYtOGNkZi04ZDY4/ZDg2YWI5ZWI.webp"
+            class="card-img-top" alt="...">
+          <div class="card-body"
+            style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <p style="color: #fff;">Saber</p>
+            <p style="color: #fff; font-weight: 600;">₹0.00</p>
+            <a href="https://www.dropbox.com/scl/fi/z4qe7f1u78xgp96rnd6ky/Saber_1.0.40_Installer_x64_2022.exe?rlkey=0zao70w3zxs9msftonlblei5p&dl=0" class="btn text-white"
+              style="border: 1px solid #fff; width: 110px;">Download</a>
+          </div>
+        </div>
+      </div>
+      <!-- ---------------------------------------- -->
+      <div class="col-6 col-md-3 product"
+        style="margin-top: 10px; display: flex; justify-content: center; align-items: center;">
+        <div class="card border-none" style="width: 16rem; border: none; background: none;">
+          <img class="card-img"
+            src="https://img.playbook.com/W0f72L3cDH5AB6pRhA3isib92MvGEiEKSDjT8CF3zEs/w:250/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy9iZmRj/NGZjYy0yZjVkLTRm/ZWItYjIzYi1lZGVh/ZTRiYjAwMGU.webp"
+            class="card-img-top" alt="...">
+          <div class="card-body"
+            style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <p style="color: #fff;">Boris FX</p>
+            <p style="color: #fff; font-weight: 600;">₹0.00</p>
+            <a href="https://www.mediafire.com/file/ffjbsj7kusants2/Boris.FX.Sapphire.Plug-ins.for.AE.v2022.exe/file" class="btn text-white"
+              style="border: 1px solid #fff; width: 110px; ">Download</a>
+          </div>
+        </div>
+      </div>
+      <!-- ---------------------------------------- -->
+      <div class="col-6 col-md-3 product"
+        style="margin-top: 10px; display: flex; justify-content: center; align-items: center;">
+        <div class="card border-none" style="width: 16rem; border: none; background: none;">
+          <img class="card-img"
+            src="https://img.playbook.com/bTsfd6miL1Zhy_G_bi5UTyCD3Jz_9cbHlr9MV7CTPOc/w:250/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvZmM0MTg0/MWEtM2Y3My00YTBi/LWEzMmQtNzkwYmRk/NGU1Mjg0.webp"
+            class="card-img-top" alt="...">
+          <div class="card-body"
+            style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <p style="color: #fff;">Element 3d</p>
+            <p style="color: #fff; font-weight: 600;">₹0.00</p>
+            <a href="https://www.dropbox.com/scl/fi/61130bw2k9zj32wyqv0fm/Element-3D-v2.2-CC-2015-1.rar?rlkey=oa6gpn385697qop08maco98yr&dl=0" class="btn text-white"
+              style="border: 1px solid #fff; width: 110px; ">Download</a>
+          </div>
+        </div>
+      </div>
+      <!-- ---------------------------------------- -->
+    </div>
+  </div>
+  </div>
+  <!-- cards -->
+
+
+  <!-- product section  2-->
+
+  <section style="margin-top: 100px;">
+    <div class="container-fluid" id="animaText">
+      <h1 class="RECOMMENDED-PRODUCTS text-uppercase" style="color: #fff; text-align: center; padding-bottom: 30px;">Premier Pro Plugins</h1>
+    </div>
+  </section>
+
+
+
+  <div class="container">
+    <div class="row" id="anima">
+      <div class="col-6 col-md-3 product"
+        style="margin-top: 10px; display: flex; justify-content: center; align-items: center;">
+        <div class="card border-none" style="width: 16rem; border: none; background: none;">
+          <img class="card-img"
+            src="https://img.playbook.com/s6LGeYW8I-enI-hneQbHdcEcfRFSJ7ojs1UdF6Lo9eM/w:250/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy82ZmQ5/ZTJkZS1jZGI2LTQ1/Y2MtYjIxMC1iYTZm/MmU4MGMxNzI.webp"
+            class="card-img-top" alt="...">
+          <div class="card-body"
+            style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <p style="color: #fff;">Red giant</p>
+            <p style="color: #fff; font-weight: 600;">₹0.00</p>
+            <a href="https://www.dropbox.com/scl/fi/tjs1f0l00m9xxgi7fn58j/Red_Giant_Universe_3_x64.zip?rlkey=p93evc43t2muczsvldss85y39&dl=0" target="_blank" class="btn text-white" style="border: 1px solid #fff; width: 110px;">Download</a>
+          </div>
+        </div>
+      </div>
+      <!-- ---------------------------------------- -->
+      <div class="col-6 col-md-3 product"
+        style="margin-top: 10px; display: flex; justify-content: center; align-items: center;">
+        <div class="card border-none" style="width: 16rem; border: none; background: none;">
+          <img class="card-img"
+            src="https://img.playbook.com/IApzMQSX_NyW-Jl5HebjkX6WuXD0Hh5tN0rBh4aeh4c/w:250/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy81YWRj/Yzc4MS03YjViLTQw/MTEtYTYxNS02YWVj/OTQ4NDdhZDg.webp"
+            class="card-img-top" alt="...">
+          <div class="card-body"
+            style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <p style="color: #fff;">Sound Q</p>
+            <p style="color: #fff; font-weight: 600;">₹0.00</p>
+            <a href="https://www.prosoundeffects.com/soundq/" target="_blank" class="btn text-white" style="border: 1px solid #fff; width: 110px;">Download</a>
+          </div>
+        </div>
+      </div>
+      <!-- ---------------------------------------- -->
+      <div class="col-6 col-md-3 product"
+        style="margin-top: 10px; display: flex; justify-content: center; align-items: center;">
+        <div class="card border-none" style="width: 16rem; border: none; background: none;">
+          <img class="card-img"
+            src="https://img.playbook.com/if79ZtQLBFdUlCQbWx_CHD5gIUZRfOiApuCooG5IDNo/w:250/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy8zMGY1/ZDYzZS0yMWVmLTRh/ZWEtOTQxYi03MWQy/YTBhN2M0NGQ.webp"
+            class="card-img-top" alt="...">
+          <div class="card-body"
+            style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <p style="color: #fff;">Premier Composer</p>
+            <p style="color: #fff; font-weight: 600;">₹0.00</p>
+            <a href="https://misterhorse.com/premiere-composer" target="_blank" class="btn text-white"
+              style="border: 1px solid #fff; width: 110px; ">Download</a>
+          </div>
+        </div>
+      </div>
+      <!-- ---------------------------------------- -->
+      <div class="col-6 col-md-3 product"
+        style="margin-top: 10px; display: flex; justify-content: center; align-items: center;">
+        <div class="card border-none" style="width: 16rem; border: none; background: none;">
+          <img class="card-img"
+            src="https://img.playbook.com/-TwcqvKG8OsscusJ6-FwTkvhb2h_8rwrnAmUOBRVKFc/w:250/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy9mMWEw/ZDkxZS04Y2I3LTRm/NDItOGE1Yi1lYzM4/ZDE0YTE5NTM.webp"
+            class="card-img-top" alt="...">
+          <div class="card-body"
+            style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <p style="color: #fff;">AE juice</p>
+            <p style="color: #fff; font-weight: 600;">₹0.00</p>
+            <a href="https://aejuice.com/free-plugins/" target="_blank" class="btn text-white"
+              style="border: 1px solid #fff; width: 110px; ">Download</a>
+          </div>
+        </div>
+      </div>
+      <!-- ----------------second colum------------------------ -->
+      <!-- ---------------------------------------- -->
+    </div>
+  </div>
+  </div>
+  <!-- ------------------ -->
+
+  <section  data-aos="fade-up">
+    <div class="container-fluid">
+      <div class="col-md-12 col-12 payment-note">
+        <h1 class="payment-head-one">START CREATING!</h1>
+        <p class="paragraph-payment-one">All packs are designed for windows users</p>
+        <h6 class="payment-email">c0mrade@gmail.com</h6>
+        <div style="padding: 19px; display: flex; justify-content: center;">
+          <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M8.07286 4.32151C13.3496 3.89283 18.6504 3.89283 23.9271 4.32151L27.4717 4.60947C29.446 4.76987 31.0612 6.30641 31.3876 8.33472C32.2041 13.4097 32.2041 18.5903 31.3876 23.6653C31.0612 25.6936 29.446 27.2301 27.4717 27.3905L23.9271 27.6785C18.6504 28.1072 13.3496 28.1072 8.07286 27.6785L4.52829 27.3905C2.55396 27.2301 0.938805 25.6936 0.612441 23.6653C-0.204147 18.5903 -0.204147 13.4097 0.612441 8.33472C0.938805 6.30641 2.55396 4.76987 4.52829 4.60947L8.07286 4.32151ZM12.8362 20.0576V11.9424C12.8362 11.5593 13.2386 11.3227 13.5549 11.5198L20.0674 15.5774C20.3746 15.7688 20.3746 16.2312 20.0674 16.4226L13.5549 20.4802C13.2386 20.6773 12.8362 20.4407 12.8362 20.0576Z"
+              fill="#FF0302"></path>
+          </svg>&nbsp;&nbsp;
+          <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M16 10.3525C12.8757 10.3525 10.3429 12.881 10.3429 16C10.3429 19.119 12.8757 21.6475 16 21.6475C19.1243 21.6475 21.657 19.119 21.657 16C21.657 12.881 19.1243 10.3525 16 10.3525Z"
+              fill="url(#paint0_radial_2689_200)"></path>
+            <path
+              d="M16 10.3525C12.8757 10.3525 10.3429 12.881 10.3429 16C10.3429 19.119 12.8757 21.6475 16 21.6475C19.1243 21.6475 21.657 19.119 21.657 16C21.657 12.881 19.1243 10.3525 16 10.3525Z"
+              fill="url(#paint1_radial_2689_200)"></path>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M6.89569 0.502254C12.8976 -0.167418 19.1024 -0.167418 25.1043 0.502254C28.4087 0.870949 31.0739 3.47017 31.4618 6.78058C32.1794 12.906 32.1794 19.094 31.4618 25.2194C31.0739 28.5298 28.4087 31.1291 25.1043 31.4977C19.1024 32.1674 12.8976 32.1674 6.8957 31.4977C3.59129 31.1291 0.926056 28.5298 0.538221 25.2194C-0.179407 19.094 -0.179407 12.906 0.538221 6.78058C0.926056 3.47017 3.59129 0.870949 6.89569 0.502254ZM24.7031 5.57379C23.7418 5.57379 22.9625 6.35179 22.9625 7.31149C22.9625 8.2712 23.7418 9.0492 24.7031 9.0492C25.6644 9.0492 26.4437 8.2712 26.4437 7.31149C26.4437 6.35179 25.6644 5.57379 24.7031 5.57379ZM7.732 16C7.732 11.4414 11.4337 7.74592 16 7.74592C20.5663 7.74592 24.268 11.4414 24.268 16C24.268 20.5586 20.5663 24.2541 16 24.2541C11.4337 24.2541 7.732 20.5586 7.732 16Z"
+              fill="url(#paint2_radial_2689_200)"></path>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M6.89569 0.502254C12.8976 -0.167418 19.1024 -0.167418 25.1043 0.502254C28.4087 0.870949 31.0739 3.47017 31.4618 6.78058C32.1794 12.906 32.1794 19.094 31.4618 25.2194C31.0739 28.5298 28.4087 31.1291 25.1043 31.4977C19.1024 32.1674 12.8976 32.1674 6.8957 31.4977C3.59129 31.1291 0.926056 28.5298 0.538221 25.2194C-0.179407 19.094 -0.179407 12.906 0.538221 6.78058C0.926056 3.47017 3.59129 0.870949 6.89569 0.502254ZM24.7031 5.57379C23.7418 5.57379 22.9625 6.35179 22.9625 7.31149C22.9625 8.2712 23.7418 9.0492 24.7031 9.0492C25.6644 9.0492 26.4437 8.2712 26.4437 7.31149C26.4437 6.35179 25.6644 5.57379 24.7031 5.57379ZM7.732 16C7.732 11.4414 11.4337 7.74592 16 7.74592C20.5663 7.74592 24.268 11.4414 24.268 16C24.268 20.5586 20.5663 24.2541 16 24.2541C11.4337 24.2541 7.732 20.5586 7.732 16Z"
+              fill="url(#paint3_radial_2689_200)"></path>
+            <defs>
+              <radialGradient id="paint0_radial_2689_200" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                gradientTransform="translate(8.50004 34.4647) rotate(-90) scale(31.7144 29.4969)">
+                <stop stop-color="#FFDD55"></stop>
+                <stop offset="0.1" stop-color="#FFDD55"></stop>
+                <stop offset="0.5" stop-color="#FF543E"></stop>
+                <stop offset="1" stop-color="#C837AB"></stop>
+              </radialGradient>
+              <radialGradient id="paint1_radial_2689_200" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                gradientTransform="translate(-5.36017 2.30523) rotate(78.6806) scale(14.1765 58.4359)">
+                <stop stop-color="#3771C8"></stop>
+                <stop offset="0.128" stop-color="#3771C8"></stop>
+                <stop offset="1" stop-color="#6600FF" stop-opacity="0"></stop>
+              </radialGradient>
+              <radialGradient id="paint2_radial_2689_200" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                gradientTransform="translate(8.50004 34.4647) rotate(-90) scale(31.7144 29.4969)">
+                <stop stop-color="#FFDD55"></stop>
+                <stop offset="0.1" stop-color="#FFDD55"></stop>
+                <stop offset="0.5" stop-color="#FF543E"></stop>
+                <stop offset="1" stop-color="#C837AB"></stop>
+              </radialGradient>
+              <radialGradient id="paint3_radial_2689_200" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                gradientTransform="translate(-5.36017 2.30523) rotate(78.6806) scale(14.1765 58.4359)">
+                <stop stop-color="#3771C8"></stop>
+                <stop offset="0.128" stop-color="#3771C8"></stop>
+                <stop offset="1" stop-color="#6600FF" stop-opacity="0"></stop>
+              </radialGradient>
+            </defs>
+          </svg>&nbsp;&nbsp;
+          <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M27.1348 28.7432L27.1359 28.7403L27.164 28.6672L32 3.22785V3.14522C32 2.51139 31.7755 1.95805 31.2871 1.62614C30.8596 1.33562 30.3681 1.31493 30.0235 1.34222C29.659 1.37109 29.3153 1.46601 29.0773 1.54503C28.9549 1.58568 28.8525 1.62485 28.7792 1.65447C28.7425 1.66934 28.7127 1.68196 28.691 1.69136L28.6697 1.70071L1.70625 12.7367L1.69883 12.7395C1.68427 12.7451 1.66501 12.7526 1.64175 12.762C1.59538 12.7808 1.53226 12.8078 1.45811 12.8428C1.31252 12.9117 1.11136 13.0179 0.907357 13.1637C0.560871 13.4113 -0.0988922 13.9973 0.0125141 14.9265C0.104792 15.6962 0.61327 16.1849 0.956071 16.438C1.13983 16.5737 1.31563 16.6715 1.44437 16.7354C1.5096 16.7678 1.56501 16.7927 1.60627 16.8102C1.62696 16.819 1.64425 16.826 1.65764 16.8313L1.67477 16.838L1.68573 16.8422L6.40316 18.4993C6.38723 18.8081 6.41659 19.1229 6.49508 19.4336L8.85809 28.7862C9.13827 29.8951 10.0998 30.6675 11.1989 30.6667C12.1841 30.666 13.0579 30.0441 13.4291 29.1163L17.1184 25.0005L23.4545 30.0689L23.5446 30.1099C24.1203 30.372 24.6581 30.455 25.1499 30.385C25.6409 30.315 26.0311 30.1001 26.3242 29.8554C26.6127 29.6147 26.8104 29.3429 26.9347 29.1383C26.9978 29.0344 27.0449 28.943 27.0776 28.8743C27.094 28.8398 27.1069 28.8105 27.1166 28.7878L27.1288 28.7585L27.1331 28.7476L27.1348 28.7432ZM8.83409 18.7902C8.78038 18.5777 8.86469 18.3533 9.04255 18.2354L25.0434 7.63355C25.0434 7.63355 25.9845 7.03741 25.9509 7.63355C25.9509 7.63355 26.1189 7.73883 25.6146 8.22969C25.1362 8.69589 14.2103 19.7019 13.1048 20.8155C13.041 20.8798 13.0029 20.9536 12.9804 21.0431L11.1971 28.1428L8.83409 18.7902Z"
+              fill="#0088CC"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+  <section>
+    <div class="container">
+      <div class="col-12 col-md-12"
+        style="display: flex; justify-content: center; align-items: center; padding: 40px 0px 20px 0px;">
+        <h3 style="color: #ffffffa4; font-size: 11px;">@woxzplugins 2020 all copyright reserved .</h3>
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <script>
+    let loader = document.getElementById("preloader")
+    window.addEventListener("load", function () {
+      loader.style.display = "none"
+    })
+  </script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 3000,
+    once: true,
+  });
+</script>
+
+  <script type="text/javascript">
+    function search() {
+      let filter = document.getElementById('find').value.toUpperCase();
+      let item = document.querySelectorAll('.product');
+      let l = document.getElementsByTagName('p');
+      for (var i = 0; i <= l.length; i++) {
+        let a = item[i].getElementsByTagName('p')[0];
+        let value = a.innerHTML || a.innerText || a.textContent;
+        if (value.toUpperCase().indexOf(filter) > -1) {
+          item[i].style.display = "";
+        }
+        else {
+          item[i].style.display = "none";
+        }
+      }
+    }
+    
+
+
+    let searchIcon = document.getElementById("search-icon");
+
+    let searchinput = document.getElementById("find");
+
+    let hide = document.getElementById("hideimg");
+
+    // let paymenthide = document.getElementById("paymenthide");
+
+    let products1 = document.getElementById("anima");
+    let products2 = document.getElementById("animaText");
+
+    searchIcon.addEventListener('click',applay);
+    
+    function applay() {
+      searchinput.style = "display: block;"
+      hide.style = "display: none;"
+      // paymenthide.style = "display: none;"
+      products1.style.cssText = 'animation-name: animation;'
+      products2.style.cssText = 'animation-name: animation;'
+      products1.style.cssText = 'animation-play-state: paused;'
+      products2.style.cssText = 'animation-play-state: paused;'
+      
+      AOS.init({
+    duration: 3000,
+    once: true,
+  });
+    }
+    
+  </script>
+
+
+
+</body>
+
+</html>
