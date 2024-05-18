@@ -43,8 +43,19 @@ html {
   min-height: 60%;
 }
 .parallax6 {
-  background: url(img/third.png);
+  background: url(img/168578.jpg);
   min-height: 60%;
+  background-size: cover;
+}
+.parallax7 {
+  background: url(img/4.jpg);
+  min-height: 60%;
+  background-size: cover;
+}
+.parallax8 {
+  background: url(img/6.png);
+  min-height: 60%;
+  background-size: cover;
 }
 .parallax5 {
   background: url(img/3.png);
@@ -226,6 +237,12 @@ section {
 }
 .aftereffects {
   background-image: url(https://img.playbook.com/_yjm1COZ1N0tQA6UcVRmGElfvlWyElhdYlJKaX0Qqrg/w:500/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvcHJvZC9w/cmV2aWV3cy8xOGM3/ZWU0ZC1mY2Y2LTRl/ZWYtOTlmZS0wZDcz/YzQ4NDczY2Y.webp);
+  object-fit: cover;
+  background-position: center;
+  height: 62vh;
+}
+.aftereffects2024 {
+  background-image: url(https://img.playbook.com/URIR52oTYezWbbvLGAAqNr40aE4HkGB3orJffNmcLMw/w:500/Z3M6Ly9icmFuZGlm/eS11c2VyY29udGVu/dC1kZXYvMzU5ODE1/YjAtY2IyNS00MzE3/LTgxNDUtMzkyMTAw/NTU3MDBl.webp);
   object-fit: cover;
   background-position: center;
   height: 62vh;
